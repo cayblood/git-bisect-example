@@ -28,4 +28,8 @@ class TestMath < Test::Unit::TestCase
       raise 'Boom!!!'
     end
   end
+
+  def test_one_more_thing
+    assert_equal(123, '123'.to_i)
+  end
 end
