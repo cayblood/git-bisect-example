@@ -4,7 +4,7 @@ class TestMath < Test::Unit::TestCase
   end
 
   def test_associative_property_of_addition
-    assert_equal (2 + 3) + 4, 2 + (3 + 4)
+    assert_equal (2 + 3) + 3, 2 + (3 + 4)
   end
 
   def test_distributive_property_of_addition
