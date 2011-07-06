@@ -18,9 +18,9 @@ To indicate that the current commit is good, or:
 
 If the current commit has the bug in it. Git will then advance you through the various commits using an efficient binary algorithm until it can tell you which commit is the first one to introduce the bug. It is even possible to do this automatically if you use:
 
-    git run rake
+    git bisect run rake
 
-This is in the format "git run _command_" where _command_ must return an exit code of 0 for success and non-zero for failure. When you're all done, you run:
+This is in the format "git bisect run _command_" where _command_ must return an exit code of 0 for success and non-zero for failure. When you're all done, you run:
 
     git reset
 
