@@ -22,6 +22,6 @@ If the current commit has the bug in it. Git will then advance you through the v
 
 This is in the format "git bisect run _command_" where _command_ must return an exit code of 0 for success and non-zero for failure. When you're all done, you run:
 
-    git reset
+    git bisect reset
 
 to get back to where you were before the bisect began.
